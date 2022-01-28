@@ -8,7 +8,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model test {
+model Text {
   id   Int     @id @default(autoincrement())
-  test String? @db.VarChar(100)
+  text String? @db.VarChar(100)
 }
