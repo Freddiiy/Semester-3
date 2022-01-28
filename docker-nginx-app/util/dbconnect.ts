@@ -2,13 +2,28 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 export async function getText() {
-    prisma.$connect();
+    try {
+        const text = await prisma.test.findUnique({
+            where: {
+                id: 1,
+            },
+        });
 
-    const text = await prisma.test.findUnique({
-        where: {
-            id: 1,
-        },
-    });
+        return text?.test;
+    } catch (error) {
+        console.error(error);
+    }
+}
 
-    return text?.test;
+export async function insertText() {
+    try {
+        prisma.test.create({
+            data: {
+                id: 1,
+                test: "text from db" 
+            }
+        });
+    } catch(error) {
+        console.error(error);
+    }
 }
