@@ -5,7 +5,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-    console.log(req.body);
-    insertText(req.body);
+    console.log(req.body.text);
+    insertText(req.body.text);
     res.status(200).redirect("/");
 }
