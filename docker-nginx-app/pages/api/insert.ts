@@ -5,6 +5,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-    insertText();
-    res.status(200).send("Ok");
+    console.log(req.body);
+    insertText(req.body);
+    res.status(200).redirect("/");
 }
