@@ -4,13 +4,9 @@ const prisma = new PrismaClient()
 export async function getText() {
     prisma.$connect();
     try {
-        const text = await prisma.text.findUnique({
-            where: {
-                id: 1,
-            },
-        });
+        const text = await prisma.text.findMany();
 
-        return text?.text;
+        return text;
     } catch (error) {
         console.error(error);
     }
@@ -18,12 +14,12 @@ export async function getText() {
     prisma.$disconnect();
 }
 
-export async function insertText() {
+export async function insertText(insert: string) {
     prisma.$connect();
     try {
         await prisma.text.create({
             data: {
-                text: "Loaded from db" 
+                text: insert 
             }
         });
     } catch(error) {
