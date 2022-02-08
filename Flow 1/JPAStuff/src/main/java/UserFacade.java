@@ -44,5 +44,6 @@ public class UserFacade {
         } finally {
             entityManager.close();
         }
+        
     }
 }

@@ -2,26 +2,19 @@ package entity;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-
 @Entity
 @Table(name = "usertable")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-
     private String fname;
-
     private String lname;
 
     // Column behøves ikke med mindre din value her er anderledes end på databasen.
     @Column(name = "pw", nullable = false)
     private String password;
-
     private String phone;
-
     private String address;
 
     public User(String fname, String lname) {

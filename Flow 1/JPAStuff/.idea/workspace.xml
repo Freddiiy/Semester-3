@@ -5,10 +5,147 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="180a5980-4cd9-446e-9442-1a366b240140" name="Changes" comment="added persistence.xml">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserFacadeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_eclipse_persistence_eclipselink_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_eclipse_persistence_jakarta_persistence_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/ex2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/src/main/java/Facade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/src/main/java/entity/Costumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex2/target/classes/entity/Costumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/artifacts/point_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/artifacts/point_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_el_jakarta_el_api_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_enterprise_jakarta_enterprise_cdi_api_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_interceptor_jakarta_interceptor_api_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__jakarta_ws_rs_jakarta_ws_rs_api_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_eclipse_persistence_eclipselink_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_eclipse_persistence_jakarta_persistence_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_inject_jersey_cdi2_se_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_json_jackson_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_classfilewriter_jboss_classfilewriter_1_2_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_weld_environment_weld_environment_common_4_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_weld_probe_weld_probe_core_4_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_weld_se_weld_se_core_4_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_weld_weld_api_4_0_SP1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_weld_weld_core_impl_4_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_jboss_weld_weld_spi_4_0_SP1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/lib/javax.transaction.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/point.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/src/main/java/com/fredoku/point/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/src/main/java/com/fredoku/point/entities/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/classes/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/classes/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/classes/com/fredoku/point/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/classes/com/fredoku/point/HelloResource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/classes/com/fredoku/point/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/classes/com/fredoku/point/entities/Point.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/eclipselink-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.12.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.12.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.12.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-jaxb-annotations-2.12.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.el-api-4.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.enterprise.cdi-api-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.inject-api-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.interceptor-api-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jakarta.ws.rs-api-3.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jboss-classfilewriter-1.2.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-cdi2-se-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-common-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-container-servlet-core-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-entity-filtering-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-media-json-jackson-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/jersey-server-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/osgi-resource-locator-1.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/weld-api-4.0.SP1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/weld-core-impl-4.0.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/weld-environment-common-4.0.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/weld-probe-core-4.0.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/weld-se-core-4.0.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../point/target/point-1.0-SNAPSHOT/WEB-INF/lib/weld-spi-4.0.SP1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +183,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="24jY41Dx248Xlo4VNGRANf5HCxG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -73,7 +213,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UserFacadeTest">
-    <configuration name="UserFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserFacadeTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="JPAStuff" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserFacadeTest" />
@@ -93,7 +233,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserFacadeTest" />
         <item itemvalue="JUnit.UserMapperTest" />
       </list>
     </recent_temporary>
@@ -110,7 +249,8 @@
       <workItem from="1644228300210" duration="569000" />
       <workItem from="1644228895729" duration="597000" />
       <workItem from="1644236315330" duration="676000" />
-      <workItem from="1644237016834" duration="669000" />
+      <workItem from="1644237016834" duration="2132000" />
+      <workItem from="1644240002208" duration="2460000" />
     </task>
     <task id="LOCAL-00001" summary="added persistence.xml">
       <created>1644146658805</created>
@@ -137,6 +277,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added persistence.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="added persistence.xml" />
   </component>
