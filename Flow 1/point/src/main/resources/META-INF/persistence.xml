@@ -6,6 +6,9 @@
     <persistence-unit name="pu" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>com.fredoku.point.entities.Point</class>
+        <class>com.fredoku.point.entities.Parent</class>
+        <class>com.fredoku.point.entities.Costumer</class>
+        <class>com.fredoku.point.entities.Address</class>
         <!--    <class>entities.RenameMe</class>-->
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>

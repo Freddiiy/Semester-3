@@ -45,14 +45,11 @@ class UserFacadeTest {
 
         em.getTransaction().begin();
 
-        TypedQuery<User> query = em.createQuery("delete from User user where user.fname =:_fname and user.lname =:_lname", User.class);
-
-        query.setParameter("_fname", "Hans");
-        query.setParameter("_lname", "Hansen");
+        TypedQuery<User> query = em.createQuery("delete from User user", User.class);
 
         int deletedCount = query.executeUpdate();
         em.getTransaction().commit();
-        System.out.println(deletedCount + " lines deleted");
+        System.out.println(deletedCount + " line(s) deleted");
         em.close();
 
     }
