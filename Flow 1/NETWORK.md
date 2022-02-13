@@ -18,7 +18,8 @@ GOOGLE "What is my ip address"
    Class A Range reserved for huge networks like ISP and datacenters. Can hold 16 mio hosts.
    
   - 172.16.0.0 – 172.31.255.255 
-    Class B range Reserved for medium to large interprises and organisations 
+    Class B range Reserved for medium to large interprises and organisations.
+    
   - 192.168.0.0 – 192.168.255.255
     For private networks and the last part is for identifying devices on the network.
  
