@@ -1,22 +1,26 @@
 package com.example.reststuff.facade;
 
+import com.example.reststuff.dto.CustomerDTO;
 import com.example.reststuff.entity.Customer;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerFacade {
 
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
-    public Customer getCustomerById(long id) {
+
+    public CustomerDTO getCustomerById(long id) {
         EntityManager em = emf.createEntityManager();
-        return em.find(Customer.class, id);
+        Customer c = em.find(Customer.class, id);
+        return new CustomerDTO(c);
     }
 
-    public void addCustomer(Customer c) {
+    public void addCustomer(CustomerDTO c) {
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
@@ -27,11 +31,14 @@ public class CustomerFacade {
         }
     }
 
-    public List<Customer> getAllCustomers() {
+    public List<CustomerDTO> getAllCustomers() {
         EntityManager em = emf.createEntityManager();
         TypedQuery<Customer> query = em.createQuery("select c from Customer c", Customer.class);
-        System.out.println(query.getResultList().size());
-        return query.getResultList();
+        List<CustomerDTO> customerDTOList = new ArrayList<>();
+        for (int i = 0; i < query.getResultList().size(); i++) {
+            customerDTOList.add(new CustomerDTO(query.getResultList().get(i)));
+        }
+        return customerDTOList;
     }
 
     public void removeCustomerById(long id) {

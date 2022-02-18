@@ -1,6 +1,7 @@
 package com.example.reststuff.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 public class Customer
@@ -16,12 +17,21 @@ public class Customer
     @Column(name = "lastName")
     private String lastName;
 
+    @Column(name = "accountInfo")
+    private String accountInfo;
+
     public Customer() {
     }
 
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public Customer(String firstName, String lastName, String accountInfo) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.accountInfo = accountInfo;
     }
 
     public Long getId() {
@@ -46,5 +56,36 @@ public class Customer
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getAccountInfo() {
+        return accountInfo;
+    }
+
+    public void setAccountInfo(String accountInfo) {
+        this.accountInfo = accountInfo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return Objects.equals(id, customer.id) && Objects.equals(firstName, customer.firstName) && Objects.equals(lastName, customer.lastName) && Objects.equals(accountInfo, customer.accountInfo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, accountInfo);
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", accountInfo='" + accountInfo + '\'' +
+                '}';
     }
 }

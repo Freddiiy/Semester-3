@@ -13,3 +13,6 @@ Content-Type: application/json
   "firstName": "Jason",
   "lastName": "Karlson"
 }
+
+###
+POST http://localhost:8080/api/customer/remove/1
