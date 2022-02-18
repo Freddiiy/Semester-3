@@ -5,22 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="180a5980-4cd9-446e-9442-1a366b240140" name="Changes" comment="added persistence.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/entity/CustomerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../point/src/main/java/com/fredoku/point/entities/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../point/src/main/java/com/fredoku/point/entities/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../point/src/main/java/com/fredoku/point/entities/Costumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../point/src/main/java/com/fredoku/point/entities/Parent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../point/src/main/java/facades/Facade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_eclipse_persistence_eclipselink_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_eclipse_persistence_jakarta_persistence_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/CustomersEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/EmployeesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/OfficesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/OrderdetailsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/OrderdetailsEntityPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/OrdersEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/PaymentsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/PaymentsEntityPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/ProductlinesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/entity/ProductsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/main/java/facade/Facade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/src/test/java/facade/FacadeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/CustomersEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/EmployeesEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/OfficesEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/OrderdetailsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/OrderdetailsEntityPK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/OrdersEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/PaymentsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/PaymentsEntityPK.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/ProductlinesEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/classes/entity/ProductsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classicmodels/target/test-classes/facade/FacadeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f3f4d556-9848-4ae7-a5b2-a5cbb66fee01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f3f4d556-9848-4ae7-a5b2-a5cbb66fee01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserFacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserFacadeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserFacadeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserFacadeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point/target/classes/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +106,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -159,7 +185,10 @@
       <workItem from="1644236315330" duration="676000" />
       <workItem from="1644237016834" duration="2132000" />
       <workItem from="1644240002208" duration="4025000" />
-      <workItem from="1644318510642" duration="4537000" />
+      <workItem from="1644318510642" duration="5608000" />
+      <workItem from="1644416276886" duration="2259000" />
+      <workItem from="1645011283939" duration="4000" />
+      <workItem from="1645016882730" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="added persistence.xml">
       <created>1644146658805</created>
