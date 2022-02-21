@@ -2,11 +2,10 @@ package com.example.reststuff.facade;
 
 import com.example.reststuff.dto.CustomerDTO;
 import com.example.reststuff.entity.Customer;
+import com.example.reststuff.entity.Employee;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
+import javax.persistence.*;
+import javax.ws.rs.NotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +25,25 @@ public class CustomerFacade {
             em.getTransaction().begin();
             em.persist(c);
             em.getTransaction().commit();
+        } finally {
+            em.close();
+        }
+    }
+
+    public void addEmplyee(Long customerId, Employee employee) {
+        EntityManager em = emf.createEntityManager();
+        Customer customer = em.find(Customer.class, customerId);
+
+        try {
+            if (customer == null) throw new NotFoundException();
+
+            customer.addEmployee(employee);
+            em.getTransaction().begin();
+
+            em.merge(customer);
+            em.getTransaction().commit();
+        } catch (NotFoundException e) {
+            e.printStackTrace();
         } finally {
             em.close();
         }
@@ -51,5 +69,18 @@ public class CustomerFacade {
         } finally {
             em.close();
         }
+    }
+
+    public List<CustomerDTO> getCustomersByEmployeeId(long id) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            TypedQuery<Customer> query = em.createQuery("select c from Customer c where Employee.id=:id", Customer.class);
+            em.setProperty("id", id);
+
+            return CustomerDTO.getDTOs(query.getResultList());
+        } finally {
+            em.close();
+        }
+
     }
 }

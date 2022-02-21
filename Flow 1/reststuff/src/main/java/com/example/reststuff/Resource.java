@@ -13,7 +13,7 @@ import javax.ws.rs.core.NewCookie;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/customer")
+@Path("/customerasd")
 public class Resource {
     CustomerFacade facade = new CustomerFacade();
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -47,7 +47,6 @@ public class Resource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response removeCustomerById(@PathParam("id")long id) {
         facade.removeCustomerById(id);
-
         return Response
                 .ok()
                 .build();

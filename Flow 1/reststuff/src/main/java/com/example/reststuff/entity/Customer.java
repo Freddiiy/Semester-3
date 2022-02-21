@@ -2,6 +2,7 @@ package com.example.reststuff.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Customer
@@ -20,8 +21,11 @@ public class Customer
     @Column(name = "accountInfo")
     private String accountInfo;
 
-    public Customer() {
-    }
+    @ManyToMany()
+    @JoinColumn(name = "employee_id", referencedColumnName = "id", nullable = false)
+    private Set<Employee> employees;
+
+    public Customer() {}
 
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
@@ -64,6 +68,14 @@ public class Customer
 
     public void setAccountInfo(String accountInfo) {
         this.accountInfo = accountInfo;
+    }
+
+    public Set<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void addEmployee(Employee employee) {
+        this.employees.add(employee);
     }
 
     @Override

@@ -27,6 +27,20 @@ public class Generate
             em.persist(c4);
 
             em.getTransaction().commit();
+
+            em.getTransaction().begin();
+
+            Employee e1 = new Employee("Steve", "Hartman", "programmer");
+            Employee e2 = new Employee("Carl", "Handsome", "consultant");
+            Employee e3 = new Employee("Lola", "Kirstensen", "fashion designer");
+            Employee e4 = new Employee("Abemand", "Orangotang", "monkey");
+
+            em.persist(e1);
+            em.persist(e2);
+            em.persist(e3);
+            em.persist(e4);
+
+            em.getTransaction().commit();
         }
         finally {
             em.close();
