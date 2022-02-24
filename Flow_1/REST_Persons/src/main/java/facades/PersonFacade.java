@@ -1,0 +1,96 @@
+package facades;
+
+import dtos.PersonDTO;
+import entities.Person;
+import errorhandling.PersonNotFoundException;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceUnit;
+import javax.persistence.TypedQuery;
+import java.util.List;
+
+public class PersonFacade implements IPersonFacade {
+
+    @PersistenceUnit
+    EntityManagerFactory emf;
+
+    private static PersonFacade instance;
+
+    private PersonFacade() {}
+
+    /*
+    public static PersonFacade getFacade(EntityManagerFactory _emf) {
+        if (instance == null) {
+            emf = _emf;
+            instance = new PersonFacade();
+        }
+        return instance;
+    }
+     */
+
+    private EntityManager getEntityManager() {
+        return emf.createEntityManager();
+    }
+
+    @Override
+    public PersonDTO add(PersonDTO personDTO) {
+        EntityManager em = getEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.persist(personDTO);
+            em.getTransaction().commit();;
+        } finally {
+            em.close();
+        }
+        return personDTO;
+    }
+
+    @Override
+    public PersonDTO delete(int id) {
+        EntityManager em = emf.createEntityManager();
+        Person person = em.find(Person.class, id);
+
+        try {
+            em.getTransaction().begin();
+            em.remove(person);
+            em.getTransaction().commit();
+        } finally {
+            em.close();
+        }
+
+        return new PersonDTO(person);
+    }
+
+    @Override
+    public PersonDTO get(int id) {
+        EntityManager em = getEntityManager();
+        Person person = em.find(Person.class, id);
+
+        return new PersonDTO(person);
+    }
+
+    @Override
+    public List<PersonDTO> getAll() {
+        EntityManager em = getEntityManager();
+        TypedQuery<Person> query = em.createQuery("select p from Person p", Person.class);
+
+        return PersonDTO.getList(query.getResultList());
+    }
+
+    @Override
+    public PersonDTO edit(PersonDTO personDTO) {
+        EntityManager em = getEntityManager();
+        if (personDTO.getId() == null) return null;
+
+        try {
+            em.getTransaction().begin();
+            em.merge(personDTO);
+            em.getTransaction().commit();
+        } finally {
+            em.close();
+        }
+
+        return personDTO;
+    }
+}
