@@ -2,24 +2,17 @@ package facades;
 
 import dtos.PersonDTO;
 import entities.Person;
-import errorhandling.PersonNotFoundException;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.PersistenceUnit;
-import javax.persistence.TypedQuery;
+import javax.persistence.*;
 import java.util.List;
 
 public class PersonFacade implements IPersonFacade {
 
-    @PersistenceUnit
-    EntityManagerFactory emf;
-
+    private static EntityManagerFactory emf;
     private static PersonFacade instance;
 
     private PersonFacade() {}
 
-    /*
     public static PersonFacade getFacade(EntityManagerFactory _emf) {
         if (instance == null) {
             emf = _emf;
@@ -27,7 +20,6 @@ public class PersonFacade implements IPersonFacade {
         }
         return instance;
     }
-     */
 
     private EntityManager getEntityManager() {
         return emf.createEntityManager();
@@ -47,7 +39,7 @@ public class PersonFacade implements IPersonFacade {
     }
 
     @Override
-    public PersonDTO delete(int id) {
+    public PersonDTO delete(Long id) {
         EntityManager em = emf.createEntityManager();
         Person person = em.find(Person.class, id);
 
@@ -63,7 +55,7 @@ public class PersonFacade implements IPersonFacade {
     }
 
     @Override
-    public PersonDTO get(int id) {
+    public PersonDTO get(Long id) {
         EntityManager em = getEntityManager();
         Person person = em.find(Person.class, id);
 

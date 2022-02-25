@@ -71,4 +71,14 @@ public class Person {
     public void setLastEdited(Date lastEdited) {
         this.lastEdited = lastEdited;
     }
+
+    @PrePersist
+    protected void onCreate() {
+        createdAt = new Date();
+    }
+
+    @PreUpdate
+    protected void lastEdited() {
+        lastEdited = new Date();
+    }
 }
