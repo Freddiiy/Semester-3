@@ -2,11 +2,11 @@
   "name": "sem3-fetch",
   "version": "1.0.0",
   "description": "Fetch excerise",
-  "main": "index.js",
+  "main": "public/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "serve public"
   },
   "author": "",
   "license": "ISC",
