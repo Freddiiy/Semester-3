@@ -1,6 +1,8 @@
 package com.fredoku.countryrestproxy.resource;
 
 import com.fredoku.countryrestproxy.type.Country;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,6 +19,8 @@ import java.util.Scanner;
 @Path("/country")
 public class CountryResource {
 
+    private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String test() {
@@ -26,8 +30,7 @@ public class CountryResource {
     @GET
     @Path("/{name}")
     @Produces(MediaType.APPLICATION_JSON)
-    public String getCountry(@PathParam("name") String name) {
-        Country country = new Country();
+    public Response getCountry(@PathParam("name") String name) {
         try {
             URL url = new URL("https://restcountries.com/v3.1/alpha/" + name);
             HttpURLConnection urlConnection = (HttpURLConnection)url.openConnection();
@@ -40,11 +43,17 @@ public class CountryResource {
                 jsonString = scanner.nextLine();
             }
             scanner.close();
-            System.out.println(jsonString);
+
+            return Response
+                    .ok()
+                    .entity(jsonString)
+                    .build();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null; //TODO replace this stub to something useful
+        return Response
+                .status(404)
+                .build();
     }
 
 }
