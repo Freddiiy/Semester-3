@@ -1,4 +1,4 @@
-package facades;
+package repository;
 
 import dtos.PersonDTO;
 import entities.Person;
@@ -6,17 +6,17 @@ import entities.Person;
 import javax.persistence.*;
 import java.util.List;
 
-public class PersonFacade implements IPersonFacade {
+public class PersonRepository implements IPersonRepository {
 
     private static EntityManagerFactory emf;
-    private static PersonFacade instance;
+    private static PersonRepository instance;
 
-    private PersonFacade() {}
+    private PersonRepository() {}
 
-    public static PersonFacade getFacade(EntityManagerFactory _emf) {
+    public static PersonRepository getFacade(EntityManagerFactory _emf) {
         if (instance == null) {
             emf = _emf;
-            instance = new PersonFacade();
+            instance = new PersonRepository();
         }
         return instance;
     }

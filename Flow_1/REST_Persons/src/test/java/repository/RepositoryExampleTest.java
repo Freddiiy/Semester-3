@@ -1,4 +1,4 @@
-package facades;
+package repository;
 
 import org.junit.jupiter.api.*;
 import utils.EMF_Creator;
@@ -10,18 +10,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //Uncomment the line below, to temporarily disable this test
 @Disabled
-public class FacadeExampleTest {
+public class RepositoryExampleTest {
 
     private static EntityManagerFactory emf;
-    private static FacadeExample facade;
+    private static RepositoryExample facade;
 
-    public FacadeExampleTest() {
+    public RepositoryExampleTest() {
     }
 
     @BeforeAll
     public static void setUpClass() {
        emf = EMF_Creator.createEntityManagerFactoryForTest();
-       facade = FacadeExample.getFacadeExample(emf);
+       facade = RepositoryExample.getFacadeExample(emf);
     }
 
     @AfterAll

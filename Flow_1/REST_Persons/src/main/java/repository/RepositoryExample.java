@@ -1,4 +1,4 @@
-package facades;
+package repository;
 
 import dtos.RenameMeDTO;
 import entities.RenameMe;
@@ -14,13 +14,13 @@ import utils.EMF_Creator;
  *
  * Rename Class to a relevant name Add add relevant facade methods
  */
-public class FacadeExample {
+public class RepositoryExample {
 
-    private static FacadeExample instance;
+    private static RepositoryExample instance;
     private static EntityManagerFactory emf;
     
     //Private Constructor to ensure Singleton
-    private FacadeExample() {}
+    private RepositoryExample() {}
     
     
     /**
@@ -28,10 +28,10 @@ public class FacadeExample {
      * @param _emf
      * @return an instance of this facade class.
      */
-    public static FacadeExample getFacadeExample(EntityManagerFactory _emf) {
+    public static RepositoryExample getFacadeExample(EntityManagerFactory _emf) {
         if (instance == null) {
             emf = _emf;
-            instance = new FacadeExample();
+            instance = new RepositoryExample();
         }
         return instance;
     }
@@ -80,7 +80,7 @@ public class FacadeExample {
     
     public static void main(String[] args) {
         emf = EMF_Creator.createEntityManagerFactory();
-        FacadeExample fe = getFacadeExample(emf);
+        RepositoryExample fe = getFacadeExample(emf);
         fe.getAll().forEach(dto->System.out.println(dto));
     }
 

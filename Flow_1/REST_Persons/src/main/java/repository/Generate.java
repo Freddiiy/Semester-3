@@ -1,6 +1,5 @@
-package facades;
+package repository;
 
-import dtos.PersonDTO;
 import entities.Person;
 
 import javax.persistence.EntityManager;
