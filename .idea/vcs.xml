@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flow_1/CPH-CA-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flow_1/CPH-CA-1/ca-1-backend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flow_1/js-exercises/3sem_singlepage_application_vite" vcs="Git" />
+  </component>
+</project>
