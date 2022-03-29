@@ -7,5 +7,20 @@ const obj = {
     gender : "Male",
     email: "kurt@wonnegut.dk"
     }
-  export default obj
+  export default obj;
+
+export interface IPersons {
+    firstName: string,
+    lastName: string,
+    gender: string,
+    email: string,
+    phone: string
+}
+
+export const persons = [
+    {firstName:"Kurt",lastName:"Wonnegut",gender: "Male",email: "k@wonnegut.dk", phone: "12345"},
+    {firstName:"Jane",lastName:"Wonnegut",gender:"female",email:"j@wonnegut.dk", phone: "12345"},
+    {firstName:"ib",lastName: "Wonnegut",gender : "Male",email: "i@wonnegut.dk", phone: "12345"},
+];
+
   

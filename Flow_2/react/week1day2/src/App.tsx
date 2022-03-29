@@ -1,45 +1,43 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useContext, useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { act } from "react-dom/test-utils";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+  return <Counter initCount={9} />;
 }
 
-export default App
+function Counter({ initCount = 5 }: { initCount?: number }) {
+  const countKey = "countKey";
+  const [count, setCount] = useState(initCount);
+
+  let count2: number = 20;
+
+  useEffect(() => {
+    localStorage.getItem(countKey);
+    const countExist = localStorage.getItem(countKey);
+    setCount(countExist ? parseInt(countExist) : 200);
+  }, []);
+
+  function handleIncrease() {
+    const newCount = count + 1;
+    localStorage.setItem(countKey, String(newCount));
+    setCount(newCount);
+  }
+
+  function handleDecrease() {
+    const newCount = count - 1;
+    localStorage.setItem(countKey, String(newCount));
+    setCount(newCount);
+  }
+
+  return (
+    <>
+      <h1>{count}</h1>
+      <button onClick={handleIncrease}>+</button>
+      <button onClick={handleDecrease}>-</button>
+    </>
+  );
+}
+
+export default App;
